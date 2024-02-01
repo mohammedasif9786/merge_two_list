@@ -1,5 +1,4 @@
 //[1,2,3,4] [1,2,3] = [1,1,2,2,3,3,4]
-
 let mergeList = (inputArr1 ,inputArr2)=>{
 
     if(mergeList.length == 2){
@@ -9,7 +8,7 @@ let mergeList = (inputArr1 ,inputArr2)=>{
 
     let finalArr =[]
  for(let i=0 ; i<highLen ; i++){
-       if(inputArr1 != undefined){
+       if(inputArr1[i] != undefined){
          finalArr.push(inputArr1[i])
          
          if(inputArr2[i] != undefined)
@@ -19,9 +18,9 @@ let mergeList = (inputArr1 ,inputArr2)=>{
 return finalArr
 }
 else{
-    return []
+    return finalArr
+}
 }
 
-}
+mergeList([1,2,3],[1,2,3,4])
 
-mergeList([1,2,3,4],[1,2,3,4])
